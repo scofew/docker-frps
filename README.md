@@ -53,7 +53,7 @@ wget https://github.ioiox.com/stilleshan/frps/raw/branch/master/frps_linux_unins
 `REPO=scofew/docker-frps` 由于 **fork** 到你自己的仓库,需修改`stilleshan`为你的 GitHub 账号ID.
 
 #### 执行一键脚本
-修改以下脚本链接中的`stilleshan`为你的 GitHub 账号 ID 后,执行即可.
+修改以下脚本链接中的`scofew`为你的 GitHub 账号 ID 后,执行即可.
 ```shell
 wget https://raw.githubusercontent.com/scofew/docker-frps/master/frps_linux_install.sh && chmod +x frps_linux_install.sh && ./frps_linux_install.sh
 ```
