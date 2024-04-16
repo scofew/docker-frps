@@ -31,7 +31,7 @@ allowPorts = [
 ]
 
 allowPorts = [
-  { start = 10001, end = 50000 }
+  { start = 10001, end = 50000 },
   { single = 60000 }
 ]
 
