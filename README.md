@@ -88,25 +88,34 @@ git clone https://github.com/scofew/docker-frps
 git clone https://github.ioiox.com/stilleshan/frps
 # 国内镜像
 
-vi /root/frps/frps.toml
+vi /root/docker-frps/frps.toml
 # 配置 frps.toml 文件
 ```
 启动容器
 ```shell
 docker run -d --name=frps --restart=always \
     --network host \
-    -v /root/frps/frps.toml:/frp/frps.toml  \
+    -v /root/docker-frps/frps.toml:/docker-frps/frps.toml  \
     stilleshan/frps
 ```
 > 以上命令 -v 挂载的目录是以 git clone 本仓库为例,也可以在任意位置手动创建 frps.toml 文件,并修改命令中的挂载路径.
 
 服务运行中修改 **frps.toml** 配置后需重启 **frps** 服务.
 ```shell
-vi /root/frps/frps.toml
 # 修改 frps.toml 配置
-docker restart frps
+vi /root/docker-frps/frps.toml
+
 # 重启 frps 容器即可生效
+docker restart frps
+
+# 停止 frps 容器
+docker stop frps
+
+# 移除 frps 容器
+docker rm frps
+
 ```
+
 
 ## 链接
 - Blog [www.ioiox.com](https://www.ioiox.com)
