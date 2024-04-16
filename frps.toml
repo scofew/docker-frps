@@ -18,7 +18,7 @@ webServer.user = "admin"
 webServer.password = "admin"
 webServer.pprofEnable = false
 
-log.to = "./frps.log"
+log.to = "/usr/local/frp/frps.log"
 log.level = "info"
 log.maxDays = 3
 log.disablePrintColor = false
