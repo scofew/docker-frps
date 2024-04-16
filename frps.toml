@@ -35,7 +35,7 @@ allowPorts = [
   { single = 60000 }
 ]
 
-maxPortsPerClient = 12  # 最大可连接端口数量,指：31400-31409,53389共11个端口号可用，如需要增加需要更改数字即可！
+maxPortsPerClient = 11  # 最大可连接端口数量,指：10001-50000,60000共11个端口号可用，如需要增加需要更改数字即可！
 udpPacketSize = 1500
 natholeAnalysisDataReserveHours = 168
 
