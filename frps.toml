@@ -27,7 +27,12 @@ auth.method = "token"
 auth.token = "12345678"
 
 allowPorts = [
+
+]
+
+allowPorts = [
   { start = 10001, end = 50000 }
+  { single = 60000 }
 ]
 
 maxPortsPerClient = 8
